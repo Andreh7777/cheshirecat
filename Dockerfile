@@ -1,7 +1,7 @@
 FROM ghcr.io/cheshire-cat-ai/core:latest
 
-RUN pip install --upgrade pip setuptools wheel typing_extensions && \
-    pip install --no-cache-dir .
+#RUN pip install --upgrade pip setuptools wheel typing_extensions && \
+RUN pip install --no-cache-dir .
 
 COPY ./install_seeweb_plugins.py /app/install_seeweb_plugins.py
 COPY ./seeweb_plugins.json /app/seeweb_plugins.json
