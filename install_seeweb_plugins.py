@@ -22,8 +22,19 @@ async def install_seeweb_plugins():
     print(f"Installing {len(plugin_list)} plugins...")
     for plugin in plugin_list:
         print(f"Installing {plugin}...")
-        plugin_path = await registry_download_plugin(plugin)
-        mad_hatter.install_plugin(plugin_path)
+        for attempt in range(3): #max 3 tentativi
+            try:
+                plugin_path = await registry_download_plugin(plugin)
+                mad_hatter.install_plugin(plugin_path)
+                break
+            except Exception as e:
+                print(f"Failed to install {plugin} (attempt {attempt + 1}/3) : {e}")
+                if attempt == 2:
+                    raise
+                await asyncio.sleep(5)
     print("All plugins installed.")
 
 asyncio.run(install_seeweb_plugins())
+
+
+

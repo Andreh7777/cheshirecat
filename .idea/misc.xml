@@ -3,5 +3,5 @@
   <component name="Black">
     <option name="sdkName" value="Python 3.10 (seeweb-cheshire-cat)" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.10 (seeweb-cheshire-cat)" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.10 virtualenv at ~/Desktop/cheshirecat_nightly/.venv" project-jdk-type="Python SDK" />
 </project>
