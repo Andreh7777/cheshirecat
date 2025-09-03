@@ -14,4 +14,5 @@ services:
     environment:
       # Timezone
       - TZ=${CCAT_TIMEZONE:-UTC}
+      - CHESHIRECAT_PASSWORD=Passw0rd
     restart: unless-stopped

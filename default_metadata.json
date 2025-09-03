@@ -1,1 +1,70 @@
-{"_default": {"1": {"name": "CoreOnlyAuthConfig", "value": {}, "category": "auth_handler_factory", "setting_id": "fc3bc78c-38de-4916-9e4d-a89d5982c728", "updated_at": 1751525685}, "2": {"name": "auth_handler_selected", "value": {"name": "CoreOnlyAuthConfig"}, "category": "auth_handler_factory", "setting_id": "e6689589-4ec8-40b4-b0df-66440ac47064", "updated_at": 1751525685}, "3": {"name": "users", "value": {"ebec0ccd-7466-4153-b8a1-6410e69d22f5": {"id": "ebec0ccd-7466-4153-b8a1-6410e69d22f5", "username": "admin", "password": "$2b$12$8pScd/2fmyRuXJIYtOmQbeTOkP/ygkGohN2Tgid45YBfD.KEuB.1W", "permissions": {"STATUS": ["WRITE", "EDIT", "LIST", "READ", "DELETE"], "MEMORY": ["WRITE", "EDIT", "LIST", "READ", "DELETE"], "CONVERSATION": ["WRITE", "EDIT", "LIST", "READ", "DELETE"], "SETTINGS": ["WRITE", "EDIT", "LIST", "READ", "DELETE"], "LLM": ["WRITE", "EDIT", "LIST", "READ", "DELETE"], "EMBEDDER": ["WRITE", "EDIT", "LIST", "READ", "DELETE"], "AUTH_HANDLER": ["WRITE", "EDIT", "LIST", "READ", "DELETE"], "USERS": ["WRITE", "EDIT", "LIST", "READ", "DELETE"], "UPLOAD": ["WRITE", "EDIT", "LIST", "READ", "DELETE"], "PLUGINS": ["WRITE", "EDIT", "LIST", "READ", "DELETE"], "STATIC": ["WRITE", "EDIT", "LIST", "READ", "DELETE"]}}, "4e2d8978-472a-4f23-ab56-d164c03b9fad": {"id": "4e2d8978-472a-4f23-ab56-d164c03b9fad", "username": "user", "password": "$2b$12$tgJn.CTTTaznwSSDCK9DBuXeiwel3DyPYKKJ8VlakPhkdywmBtRnm", "permissions": {"STATUS": ["READ"], "MEMORY": ["READ", "LIST"], "CONVERSATION": ["WRITE", "EDIT", "LIST", "READ", "DELETE"], "STATIC": ["READ"], "UPLOAD": ["WRITE", "EDIT", "LIST", "READ", "DELETE"]}}}, "category": null, "setting_id": "383390c3-4452-4171-8f89-37c0e749aae0", "updated_at": 1751526283}, "4": {"name": "active_plugins", "value": ["core_plugin", "cheshirecat_plugin", "ccat_reranker", "query_compressor", "ingestanything"], "category": null, "setting_id": "91eb7e0d-f145-44dd-95b7-02b5b814a18d", "updated_at": 1751614818}, "5": {"name": "RegoloLLMSettings", "value": {"model": "Llama-3.3-70B-Instruct", "streaming": true}, "category": "llm_factory", "setting_id": "d911494b-6fd0-425d-9a8e-616efca0661b", "updated_at": 1751526110}, "6": {"name": "llm_selected", "value": {"name": "RegoloLLMSettings"}, "category": "llm", "setting_id": "f41caedb-6c19-4e34-bc6a-f85737007411", "updated_at": 1751526110}, "7": {"name": "RegoloEmbeddingsConfig", "value": {"model": "gte-Qwen2"}, "category": "embedder_factory", "setting_id": "42fff91c-6997-4d12-bdfa-541e38a2412d", "updated_at": 1751526116}, "8": {"name": "embedder_selected", "value": {"name": "RegoloEmbeddingsConfig"}, "category": "embedder", "setting_id": "7fa6dce9-b968-49f3-b7a0-9c3516ef504e", "updated_at": 1751526116}}}
+{
+  "_default": {
+    "1": {
+      "name": "CoreOnlyAuthConfig",
+      "value": {},
+      "category": "auth_handler_factory",
+      "setting_id": "fc3bc78c-38de-4916-9e4d-a89d5982c728",
+      "updated_at": 1751525685
+    },
+    "2": {
+      "name": "auth_handler_selected",
+      "value": {
+        "name": "CoreOnlyAuthConfig"
+      },
+      "category": "auth_handler_factory",
+      "setting_id": "e6689589-4ec8-40b4-b0df-66440ac47064",
+      "updated_at": 1751525685
+    },
+    "4": {
+      "name": "active_plugins",
+      "value": [
+        "ingestanything",
+        "cheshirecat_plugin",
+        "query_compressor",
+        "ccat_reranker",
+        "core_plugin"
+      ],
+      "category": null,
+      "setting_id": "9e195e08-fefd-4ddc-a740-c717dc3c8525",
+      "updated_at": 1751639977
+    },
+    "5": {
+      "name": "RegoloLLMSettings",
+      "value": {
+        "model": "Llama-3.3-70B-Instruct",
+        "streaming": true
+      },
+      "category": "llm_factory",
+      "setting_id": "c10079d2-af6c-4fe5-b65f-5f4cbd3c9e10",
+      "updated_at": 1751639982
+    },
+    "6": {
+      "name": "llm_selected",
+      "value": {
+        "name": "RegoloLLMSettings"
+      },
+      "category": "llm",
+      "setting_id": "bc6a3842-3648-4ee1-a1d1-f4726b96c13a",
+      "updated_at": 1751639982
+    },
+    "7": {
+      "name": "RegoloEmbeddingsConfig",
+      "value": {
+        "model": "gte-Qwen2"
+      },
+      "category": "embedder_factory",
+      "setting_id": "42fff91c-6997-4d12-bdfa-541e38a2412d",
+      "updated_at": 1751526116
+    },
+    "8": {
+      "name": "embedder_selected",
+      "value": {
+        "name": "RegoloEmbeddingsConfig"
+      },
+      "category": "embedder",
+      "setting_id": "7fa6dce9-b968-49f3-b7a0-9c3516ef504e",
+      "updated_at": 1751526116
+    }
+  }
+}
